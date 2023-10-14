@@ -1,6 +1,6 @@
 # WELCOME TO SKYFLIX
 ## On this website you can see various lists of selected horror genre films 
-**Welcome TO SkyFlix Family**
+**Welcome To SkyFlix Family**
 https://skyflixx.github.io/
 ❤❤❤
 ### This is a view of the Skyflix website
