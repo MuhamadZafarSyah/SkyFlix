@@ -5,6 +5,6 @@ https://skyflixx.github.io/
 :rocket
 ### This is a view of the Skyflix website
 ![view from SkyFlix](/Aset/SkyFlix.png)
-![view from SkyFlix](/Aset/SkyFlix About movie.png)
-![view from SkyFlix](/Aset/SkyFlix Member Section.png)
+![view from SkyFlix](/Aset/SkyFlix3.png)
+![view from SkyFlix](/Aset/SkyFlix2.png)
 #### I want to thank all the members who helped create this Skyflix website
