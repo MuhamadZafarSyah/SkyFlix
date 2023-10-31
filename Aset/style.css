@@ -1,0 +1,588 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  cursor: url("cursor.cur"), auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+img,
+span,
+input,
+button {
+  display: block;
+}
+
+select,
+button {
+  border: none;
+}
+.filter-list:hover {
+  cursor: none;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('background.jpg');
+}
+.container {
+  padding-inline: 10px;
+}
+
+header {
+  background-color: hsl(207, 19%, 11%);
+  position: fixed;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 2;
+  top: 0;
+}
+
+.navbar {
+  min-height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.25rem;
+  margin: 0 5vw;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.75rem;
+  padding-left: 0;
+}
+
+.navbar-branding {
+  color: white;
+  transform: scale(1.1);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-branding:hover {
+  color: #5468ff;
+  text-shadow: 0 3px 13px #5468ff;
+}
+
+.logo {
+  width: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: #5468ff;
+  text-shadow: 0 3px 25px #5468ff;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 1.563rem;
+  height: 0.188rem;
+  margin: 0.313rem auto;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease-in-out;
+  color: white;
+}
+
+.mode__con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2 {
+  color: hsl(0, 100%, 100%);
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: 32px;
+}
+
+.section-subtitle {
+  color: hsl(57, 97%, 45%);
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+}
+
+ul .filter-list {
+  cursor: none;
+}
+
+li .filter-btn {
+  cursor: none;
+}
+
+.header h1 {
+  margin-top: 180px;
+  line-height: 2.25rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 10px #3c6e71;
+  transition: 5s;
+  user-select: none;
+  padding: 29px;
+}
+.header h1:hover {
+  transition: 0.9s ease;
+  color: #8aeff8;
+  text-shadow: 0 0 20px #8aeff8;
+}
+.header p {
+  margin-bottom: 1.5rem;
+  margin-top: 20px;
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  color: #d3d5da;
+  text-align: center;
+  margin-left: 195px;
+  margin-right: 195px;
+}
+.header h2 {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px hsl(57, 97%, 45%);
+}
+.film {
+  margin: 5rem;
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1280px;
+}
+.film img {
+  width: 30%;
+}
+
+.film .title {
+  margin-top: 1rem;
+}
+
+.film .title h2 {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+.title p {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+  color: #6b7280;
+}
+
+/**
+   * BADGE
+   */
+
+.badge {
+  color: hsl(0, 100%, 100%);
+  font-size: 11px;
+  font-weight: 700;
+  border: 2px solid transparent;
+  padding: 2px 10px;
+}
+
+.badge-outline {
+  border-color: hsl(0, 100%, 100%);
+}
+
+/**
+   * MOVIE CARD
+   */
+
+.movies-list {
+  display: grid;
+  gap: 50px;
+}
+.movie-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card .card-banner {
+  position: relative;
+  background: hsl(229, 15%, 21%);
+  aspect-ratio: 2 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.movie-card .card-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.movie-card .card-banner:hover {
+  box-shadow: 0 1px 2px hsl(57, 97%, 45%);
+}
+
+.movie-card .card-banner:hover::after {
+  background: hsla(0, 0%, 100%, 0.05);
+}
+
+.movie-card .card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-card .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.movie-card .card-title {
+  color: hsl(0, 100%, 100%);
+  font-size: 16px;
+  transition: var(--transition-1);
+}
+
+.movie-card .card-title:is(:hover, :focus) {
+  color: hsl(57, 97%, 45%);
+}
+
+.movie-card .title-wrapper time {
+  color: hsl(57, 97%, 45%);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.movie-card .card-meta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.movie-card .badge {
+  color: hsl(57, 97%, 45%);
+}
+
+.movie-card .duration {
+  margin-left: auto;
+}
+
+.movie-card :is(.duration, .rating) {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: hsl(0, 7%, 88%);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/**
+   * CUSTOM SLIDER & SCROLLBAR
+   */
+
+.movies-list.has-scrollbar {
+  scroll-padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: 0 0 0 2px hsl(57, 97%, 45%);
+  border-radius: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(0, 7%, 88%);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 0 hsl(0, 0%, 0%), inset 0 -1px 0 hsl(0, 0%, 0%);
+}
+
+/*-----------------------------------*\
+   * #UPCOMING
+  \*-----------------------------------*/
+
+.list-film .flex-wrapper {
+  margin-bottom: 50px;
+  margin-top: 200px;
+}
+
+.list-film .section-title {
+  margin-bottom: 30px;
+}
+
+.list-film .section-title-2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: hsl(57, 97%, 45%);
+  font-size: 2.5rem;
+  font-family: "Carter One", sans-serif;
+  font-weight: bold;
+}
+
+.list-film {
+  gap: 15px;
+  margin-bottom: 50px;
+  background-position: center;
+}
+
+.list-film .filter-btn {
+  position: relative;
+  background: hsl(170, 21%, 5%);
+  color: hsl(0, 3%, 80%);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 17px 25px;
+  border-radius: 4px;
+  box-shadow: inset 0 3px 7px hsla(0, 0%, 0%, 0.8);
+}
+
+.list-film .filter-btn:is(:hover, :focus) {
+  color: hsl(57, 97%, 45%);
+  text-shadow: 0 3px 25px hsla(57, 97%, 45%, 0.5);
+}
+
+.list-film .filter-btn:focus::before,
+.list-film .filter-btn:focus::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: hsl(57, 97%, 45%);
+  width: 2px;
+  height: 15px;
+}
+
+.list-film .filter-btn:focus::before {
+  left: 0;
+}
+
+.list-film .filter-btn:focus::after {
+  right: 0;
+}
+
+.container {
+  max-width: 1320px;
+  margin-top: 120px;
+}
+
+.list-film .movies-list > li {
+  min-width: calc(25% - 22.5px);
+}
+
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 0%);
+}
+.footer h5 {
+  color: white;
+  text-shadow: 0 0 10px #3c6e71;
+}
+
+/* This is a media query. It is saying that if the screen is less than 769px, then do the following. */
+@media only screen and (max-width: 769px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(0.5rem) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-0.5rem) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    gap: 0;
+    flex-direction: column;
+    background-color: hsl(207, 19%, 11%);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .nav-menu.active {
+    top: 3.813rem;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .header h1 {
+    margin-top: 120px;
+  }
+  .header p {
+    padding-left: 0;
+    margin: 0;
+    padding-inline: 10px;
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  .movies-list.has-scrollbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .filter-list {
+    padding-left: 0;
+  }
+  .navigasi ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .list-film .filter-btn {
+    font-size: 10px;
+  }
+}
+
+.nav-icon-6 {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  display: inline-block;
+}
+.nav-icon-6 span {
+  background-color: white;
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 4px;
+}
+.nav-icon-6 span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+.nav-icon-6 span:nth-child(2) {
+  top: 13px;
+  left: 0px;
+}
+.nav-icon-6 span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+.nav-icon-6:not(.open):hover span:nth-child(1) {
+  transform: scaleY(1.2);
+  left: -5px;
+}
+.nav-icon-6:not(.open):hover span:nth-child(2) {
+  transform: rotate(5deg) scaleY(1.1);
+}
+.nav-icon-6:not(.open):hover span:nth-child(3) {
+  transform: scaleY(1.2);
+  left: 5px;
+}
+.nav-icon-6.open span:nth-child(1) {
+  transform: rotate(45deg) scaleX(0.7);
+  top: 13px;
+  left: -8px;
+}
+.nav-icon-6.open span:nth-child(2) {
+  transform: scale(0);
+  transition-duration: 50ms;
+}
+.nav-icon-6.open span:nth-child(3) {
+  transform: rotate(-45deg) scaleX(0.7);
+  top: 13px;
+  left: 7px;
+}
